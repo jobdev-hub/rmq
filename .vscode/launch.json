@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "publisherMQ",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/publisherMQ",
+            "env": {},
+            "args": []
+        },
+        {
+            "name": "consumerMQ",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/consumerMQ",
+            "env": {},
+            "args": []
+        },
+        {
+            "name": "receiver",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/receiver",
+            "env": {},
+            "args": []
+        }
+    ],
+    "compounds": [
+        {
+            "name": "all",
+            "configurations": ["publisherMQ", "consumerMQ", "receiver"]
+        }
+    ]
+}
