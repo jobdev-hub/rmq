@@ -6,7 +6,7 @@
             "type": "go",
             "request": "launch",
             "mode": "auto",
-            "program": "${workspaceFolder}/publisherMQ",
+            "program": "${workspaceFolder}/services/publisherMQ",
             "env": {},
             "args": []
         },
@@ -15,24 +15,18 @@
             "type": "go",
             "request": "launch",
             "mode": "auto",
-            "program": "${workspaceFolder}/consumerMQ",
+            "program": "${workspaceFolder}/services/consumerMQ",
             "env": {},
             "args": []
         },
         {
-            "name": "receiver",
+            "name": "receiverHTTP",
             "type": "go",
             "request": "launch",
             "mode": "auto",
-            "program": "${workspaceFolder}/receiver",
+            "program": "${workspaceFolder}/services/receiverHTTP",
             "env": {},
             "args": []
-        }
-    ],
-    "compounds": [
-        {
-            "name": "all",
-            "configurations": ["publisherMQ", "consumerMQ", "receiver"]
         }
     ]
 }

@@ -31,3 +31,11 @@ Work Queues
 - https://www.rabbitmq.com/tutorials
 
 - https://www.rabbitmq.com/docs
+
+- https://grafana.com/grafana/dashboards/?search=rabbitmq
+
+- https://grafana.com/docs/grafana/latest/
+
+- https://grafana.com/docs/grafana/latest/datasources/prometheus/
+
+- https://prometheus.io/docs/introduction/overview/

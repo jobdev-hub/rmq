@@ -1,0 +1,22 @@
+version: '3'
+services:
+  rabbitmq:
+    build: .
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+      - "15692:15692"
+  prometheus:
+    image: prom/prometheus
+    volumes:
+      - ./rabbitmq_prometheus_config.yml:/etc/prometheus/prometheus.yml
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    ports:
+      - "9090:9090"
+  grafana:
+    image: grafana/grafana
+    volumes:
+      - ./grafana-provisioning:/etc/grafana/provisioning
+    ports:
+      - "3000:3000"
